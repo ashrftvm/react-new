@@ -3,10 +3,12 @@ import React from "react";
 import "./App.css";
 
 import Tweet from "./Components/Tweet";
+import StateChange from "./Components/StateChange";
 
 function App() {
   return (
     <div className="App">
+      <StateChange />
       <header className="App-header">
         <Tweet name="Asif" tweets="Hi hello, this is the first one" likes="2" />
         <Tweet
