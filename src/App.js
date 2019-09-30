@@ -1,15 +1,29 @@
 import React from "react";
-import logo from "./logo.svg";
+
 import "./App.css";
 
-import SayHello from "./Components/SayHello";
+import Tweet from "./Components/Tweet";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <SayHello />
+        <Tweet name="Asif" tweets="Hi hello, this is the first one" likes="2" />
+        <Tweet
+          name="Sha"
+          tweets="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+          likes="21"
+        />
+        <Tweet
+          name="Ali"
+          tweets="Aspernatur amet earum quisquam dolor architecto ab"
+          likes="12"
+        />
+        <Tweet
+          name="Cool"
+          tweets="ad eos, fugiat itaque autem asperiores aliquam, commodi "
+          likes="25"
+        />
       </header>
     </div>
   );
